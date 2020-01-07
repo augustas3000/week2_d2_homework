@@ -103,3 +103,9 @@ end
 def volume_of_sphere(r)
   return ((4/3)*Math::PI*(r**3)).round(2)
 end
+
+def fahrenheit_to_celsius(f)
+  return (f - 32) * (5/9)
+end
+
+# (°F − 32) × 5/9 = °C
