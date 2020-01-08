@@ -107,11 +107,11 @@ end
 
 
 def volume_of_sphere(r)
-  return ((4/3)*Math::PI*(r**3)).round(2)
+  return (4/3*Math::PI*r**3).round(2)
 end
 
 def fahrenheit_to_celsius(f)
-  c = (f - 32) * (5.00/9) #specify a float otherwise 5/9 = 0
+  c = (f - 32) * 5.00/9 #specify a float otherwise 5/9 = 0
   return c.round
 end
 
