@@ -105,7 +105,11 @@ def volume_of_sphere(r)
 end
 
 def fahrenheit_to_celsius(f)
-  return (f - 32) * (5/9)
+  c = (f - 32) * (5.00/9) #specify a float otherwise 5/9 = 0
+  return c.round
 end
+
+puts fahrenheit_to_celsius(67)
+
 
 # (°F − 32) × 5/9 = °C

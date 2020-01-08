@@ -104,9 +104,9 @@ class FunctionsTest < MiniTest::Test
   def test_fahrenheit_to_celsius()
     # arrange
     # act
-    result = fahrenheit_to_celsius(32)
+    result = fahrenheit_to_celsius(45)
     # assert
-    assert_equal(0, result)
+    assert_equal(7, result)
   end
 
 
