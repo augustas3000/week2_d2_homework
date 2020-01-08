@@ -37,28 +37,28 @@ end
 
 def number_to_full_month_name(month_number)
 
-  case
-    when month_number == 1
+  case month_number
+    when 1
       return "January"
-    when month_number == 2
+    when 2
       return "February"
-    when month_number == 3
+    when 3
       return "March"
-    when month_number == 4
+    when 4
       return "April"
-    when month_number == 5
+    when 5
       return "May"
-    when month_number == 6
+    when 6
       return "June"
-    when month_number == 7
+    when 7
       return "July"
-    when month_number == 8
+    when 8
       return "August"
-    when month_number == 9
+    when 9
       return "September"
-    when month_number == 10
+    when 10
       return "October"
-    when month_number == 11
+    when 11
       return "November"
     else
       return "December"
@@ -67,28 +67,28 @@ end
 
 def number_to_short_month_name(month_number)
 
-    case
-      when month_number == 1
+    case month_number
+      when 1
         return "Jan"
-      when month_number == 2
+      when 2
         return "Feb"
-      when month_number == 3
+      when 3
         return "Mar"
-      when month_number == 4
+      when 4
         return "Apr"
-      when month_number == 5
+      when 5
         return "May"
-      when month_number == 6
+      when 6
         return "Jun"
-      when month_number == 7
+      when 7
         return "Jul"
-      when month_number == 8
+      when 8
         return "Aug"
-      when month_number == 9
+      when 9
         return "Sep"
-      when month_number == 10
+      when 10
         return "Oct"
-      when month_number == 11
+      when 11
         return "Nov"
       else
         return "Dec"
