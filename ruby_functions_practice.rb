@@ -12,12 +12,13 @@ def subtract(x, y)
   return x - y
 end
 
+# convert to floats any of the arguments.
 def multiply(x, y)
-  return x * y
+  return x.to_f * y
 end
 
 def divide(x, y)
-  return x / y
+  return x.to_f / y
 end
 
 def length_of_string(string)
@@ -60,39 +61,44 @@ def number_to_full_month_name(month_number)
       return "October"
     when 11
       return "November"
-    else
+    when 12
       return "December"
+    else
+      return "Not a month"
   end
 end
 
 def number_to_short_month_name(month_number)
 
-    case month_number
-      when 1
-        return "Jan"
-      when 2
-        return "Feb"
-      when 3
-        return "Mar"
-      when 4
-        return "Apr"
-      when 5
-        return "May"
-      when 6
-        return "Jun"
-      when 7
-        return "Jul"
-      when 8
-        return "Aug"
-      when 9
-        return "Sep"
-      when 10
-        return "Oct"
-      when 11
-        return "Nov"
-      else
-        return "Dec"
-    end
+  full_month_name = number_to_full_month_name(month_number)
+  short_name = full_month_name.slice(0, 3)
+  return short_name
+    # case month_number
+    #   when 1
+    #     return "Jan"
+    #   when 2
+    #     return "Feb"
+    #   when 3
+    #     return "Mar"
+    #   when 4
+    #     return "Apr"
+    #   when 5
+    #     return "May"
+    #   when 6
+    #     return "Jun"
+    #   when 7
+    #     return "Jul"
+    #   when 8
+    #     return "Aug"
+    #   when 9
+    #     return "Sep"
+    #   when 10
+    #     return "Oct"
+    #   when 12
+    #     return "Dec"
+    #   else
+    #     return "Not a month"
+    # end
 end
 
 def volume_of_cube(a)

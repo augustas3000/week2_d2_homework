@@ -7,7 +7,12 @@ require_relative( '../ruby_functions_practice' )
 class FunctionsTest < MiniTest::Test
 
   def test_return_10()
+    # arrange
+
+    # act
     return_10_result = return_10()
+
+    # assert
     assert_equal( 10, return_10_result )
   end
 
@@ -27,8 +32,8 @@ class FunctionsTest < MiniTest::Test
   end
 
   def test_divide()
-    divide_result = divide( 10, 2 )
-    assert_equal( 5, divide_result )
+    divide_result = divide( 3, 2 )
+    assert_equal( 1.5, divide_result )
   end
 
   def test_length_of_string()
